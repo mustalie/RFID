@@ -1,0 +1,86 @@
+[
+    {
+        "name": "id",
+        "dbType": "bigincrements",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "ACC",
+        "dbType": "string:foreign,MPersediaan,ACC",
+        "htmlType": "select,s",
+        "relation": "mt1,Persediaan,ACC,ACC"
+    },
+    {
+        "name": "group_id",
+        "dbType": "biginteger:unsigned:nullable:foreign,inventory_groups,id",
+        "htmlType": "select,s",
+        "relation": "mt1,InventoryGroup,group_id,id"
+    },
+    {
+        "name": "room_id",
+        "dbType": "biginteger:unsigned:nullable:foreign,rooms,id",
+        "htmlType": "select,s",
+        "relation": "mt1,Room,room_id,id"
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "created_by",
+        "dbType": "biginteger:unsigned:nullable:foreign,users,id",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_by",
+        "dbType": "biginteger:unsigned:nullable:foreign,users,id",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "deleted_by",
+        "dbType": "biginteger:unsigned:nullable:foreign,users,id",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]
